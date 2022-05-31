@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirect</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXXXXX-X');
+      gtag('event', 'page_view');
+      gtag('event', 'homepage', {
+        'event_category': 'redirect',
+        'event_label': 'https://helios.limited/qr.php?c=flyer', 
+        'event_callback': function() {
+            window.location.href = "https://helios.limited/qr.php?c=flyer"
+        }
+      });
+    </script>
+</head>
+<body>
+    If you are not redirected automatically, follow <a href='https://google.com'>this link</a>
+</body>
+</html>
